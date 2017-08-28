@@ -1,0 +1,118 @@
+/*背景色*/
+body {
+    background:
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
+    linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
+    background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
+    background-color: #840b2a;
+    font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
+}
+/*图片鼠标悬停效果*/
+img {
+    cursor: pointer;
+}
+/*文档内容样式*/
+article {
+    color: yellow;
+    margin: 1em;
+}
+
+header {
+    margin-bottom: 1em;
+}
+
+hr {
+    background-color: yellow;
+    height: 1px;
+    border: none;
+}
+
+/*主页边框*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: 1em;
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.myrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+}
+/*主图样式*/
+.main_picture {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    max-width:1140px;
+    max-height: 640px;
+    border-radius: 20px;
+}
+/*其余图片样式*/
+.other_picture {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    max-width:100%;
+    max-height: 100%;
+    border-radius: 20px;
+}
+/*标题样式*/
+.mytitle {
+    color: yellow;
+}
+/*文本样式*/
+.mytext {
+    color: yellow;
+    font-size: 1.5em;
+    text-indent: 2em;
+}
+/*内容样式*/
+.mycontent {
+    color: yellow;
+    text-align: center;
+}
+
+/*600px为断点，响应式设计，修改字体大小*/
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 20px !important;
+    }
+
+    h2,h3 {
+        font-size: 15px !important;
+    }
+
+    .pic1 {
+        width: auto;
+        height: auto;
+    }
+
+    .mytitle {
+        text-align: left !important;
+    }
+
+    .other_picture {
+        width: 80%;
+        height: 80%;
+        max-width:80%;
+        max-height: 80%;
+    }
+
+    .mytext {
+        font-size: 1em;
+    }
+}

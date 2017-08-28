@@ -1,0 +1,159 @@
+<!-- 该页面运用bootstrap网格布局col-md-x与弹性盒布局两种布局方式，使用modal插件显示各图片对应景区的详细信息。-->
+<!doctype html>
+<html>
+  <head>
+    <title>人在旅途系列</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mycss.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+<!-- 主页 -->
+  <main class="container">
+  <!-- 标题栏 -->
+    <header class="row">
+      <section class="col-md-6">
+      <img class="logo" src="images/travel-200x100_large.jpg" alt="logo">
+      </section>
+      <section class="col-md-6 text-right mytitle">
+        <h1>人在旅途之</h1>
+        <h3>--威海三日游</h3>
+      </section>
+    </header>
+    <!-- 主图 -->
+    <section class="row myrow">
+      <img src="images/img1-1140x640_large.jpg" srcset= "images/img1-570x320_large.jpg 570w, images/img1-1140x640_large.jpg 1140w" class="img-responsive main_picture" alt="威海图片" data-toggle="modal" data-target="#project1">
+    </section>
+
+    <!-- 网格布局，二级标题 -->
+    <article class="row">
+        <h2>沿途取景:</h2>
+        <p class="mytext">威海环境优美，气候宜人，本次游历，途经刘公岛风景区，定远舰模型，大熊猫馆和抹香鲸展览馆等景区，风景优美，人文荟萃，是旅游度假的好去处，下面，让我来带领大家一起来看一看吧～</p>
+    </article>
+
+    <!-- 图片栏 -->
+    <section class="row myrow">
+      <figure class="col-md-6 mycontent">
+        <img src="images/img2-1140x640_large.jpg" srcset= "images/img2-570x320_large.jpg 570w, images/img2-1140x640_large.jpg 1140w" class="pic1 img-responsive other_picture" alt="刘公岛图片" data-toggle="modal" data-target="#project2">
+        <figcaption class="mytext">刘公岛</figcaption>
+      </figure>
+      <figure class="col-md-6 mycontent">
+        <img src="images/img3-1140x640_large.jpg" srcset= "images/img3-570x320_large.jpg 570w, images/img3-1140x640_large.jpg 1140w" class="pic1 img-responsive other_picture" alt="定远舰图片" data-toggle="modal" data-target="#project3">
+        <figcaption class="mytext">定远舰</figcaption>
+      </figure>
+    </section>
+
+    <!-- 图片栏 -->
+    <section class="row myrow">
+      <figure class="col-md-6 mycontent" >
+        <img src="images/img4-1140x640_large.jpg" srcset= "images/img4-570x320_large.jpg 570w, images/img4-1140x640_large.jpg 1140w" class="pic1 img-responsive other_picture" alt="大熊猫图片" data-toggle="modal" data-target="#project4">
+        <figcaption class="mytext">大熊猫</figcaption>
+      </figure>
+      <figure class="col-md-6 mycontent">
+        <img src="images/img5-1140x640_large.jpg" srcset= "images/img5-570x320_large.jpg 570w, images/img5-1140x640_large.jpg 1140w" class="pic1 img-responsive other_picture" alt="抹香鲸图片" data-toggle="modal" data-target="#project5">
+        <figcaption class="mytext">抹香鲸</figcaption>
+      </figure>
+    </section>
+
+    <footer class="mycontent">
+        <hr />
+        <p>author: &nbsp;run-after-dream</p>
+    </footer>
+  </main>
+
+<!-- Modal Project1 -->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">威海</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/555.jpeg">
+                    威海，是山东省地级市，位于山东半岛东端，北、东、南三面濒临黄海，北与辽东半岛相对，东与朝鲜半岛隔海相望，西与山东烟台接壤。东西最大横距135公里，南北最大纵距81公里，总面积5797平方公里，其中市区面积777平方公里。海岸线长985.9公里。辖环翠区、文登区、荣成市、乳山市。
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- Modal Project2 -->
+<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">刘公岛</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/555.jpeg">
+                    刘公岛位于山东半岛最东端的威海湾内，人文景观丰富独特，既有上溯千年的战国遗址、汉代刘公刘母的美丽传说，又有清朝北洋海军提督署、水师学堂、古炮台等甲午战争遗址，还有众多英租时期遗留下来的欧式建筑，素有“东隅屏藩”和“不沉的战舰”之称。
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- Modal Project3 -->
+<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">定远舰</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/555.jpeg">
+                    “定远”号战斗舰/一等装甲舰（steel battleships）造价620万马克（折合37万英镑），属定远级战斗舰，由清朝委托德国坦特伯雷度（该地二战后划归波兰，现名什切青（Szczecin））的伏尔铿(Vulcan)造船厂建造的7000吨级的一等铁甲舰。分别为定远号及镇远号，为北洋舰队的主力舰。
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- Modal Project4 -->
+<div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">大熊猫</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/555.jpeg">
+                    大熊猫（学名：Ailuropoda melanoleuca，英文名称：Giant panda），属于哺乳纲、食肉目、熊科，是大熊猫亚科和大熊猫属唯一哺乳动物，体色为黑白两色，它有着圆形脸颊，两个大黑眼圈，壮硕的身体，标志性的内八字行走方式，也有解剖刀般锋利的爪子。
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- Modal Project5 -->
+<div class="modal fade" id="project5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">抹香鲸</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/555.jpeg">
+                    抹香鲸（学名：Physeter macrocephalus）：头部巨大，下颌较小，仅下颌有牙齿。主要食乌贼。体长可达18米，体重超过50吨，是体型最大的齿鲸，头部可占身体的1/3，无背鳍；潜水能力极强，是潜水最深，潜水时间最长的哺乳动物。体型似鱼，用肺呼吸。颈短，头似与躯干相联；颈椎愈合；鼻孔为喷孔，位于吻端，前肢成鳍，前臂退化，掌部变长，趾数增加，但从外部看不出趾和爪；后肢退化；尾似鱼，有水平尾鳍，游泳靠尾挥动。
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>
